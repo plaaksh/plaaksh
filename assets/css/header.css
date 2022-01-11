@@ -1,0 +1,193 @@
+#header {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 8px 25px 5px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 800;
+  min-height: 82px;
+}
+
+#header.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+#header .header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .logo {
+  max-width: 250px;
+  display: inline-block;
+}
+
+#navigator ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+#navigator li {
+  margin: 0 10px;
+}
+
+#navigator a {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  padding: 5px 8px 12px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#navigator a::after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#navigator a:hover::after {
+  width: 100%;
+}
+
+.search-bar {
+  border-radius: 30px;
+  height: 35px;
+  width: 200px;
+  border: 2px solid;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: transparent;
+}
+
+.search-bar:focus {
+  outline: 0;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-light {
+  color: #222;
+  background-color: #DDD;
+}
+
+.theme-light .logo-white {
+  display: none;
+}
+
+.theme-light #navigator a:hover {
+  color: #222;
+}
+
+.theme-light #navigator a::after {
+  background: #222;
+}
+
+.theme-light #navigator a:hover::after {
+  background: #222;
+}
+
+.theme-light .search-bar {
+  border-color: #222;
+}
+
+.theme-light ::-webkit-input-placeholder {
+  color: #222;
+  opacity: 0.5;
+}
+
+.theme-light :-ms-input-placeholder {
+  color: #222;
+  opacity: 0.5;
+}
+
+.theme-light ::-ms-input-placeholder {
+  color: #222;
+  opacity: 0.5;
+}
+
+.theme-light ::placeholder {
+  color: #222;
+  opacity: 0.5;
+}
+
+.theme-dark {
+  color: #DDD;
+  background-color: #222;
+}
+
+.theme-dark .logo-black {
+  display: none;
+}
+
+.theme-dark #navigator a:hover {
+  color: #DDD;
+}
+
+.theme-dark #navigator a::after {
+  background: #DDD;
+}
+
+.theme-dark #navigator a:hover::after {
+  background: #DDD;
+}
+
+.theme-dark .search-bar {
+  color: #DDD;
+  border-color: #DDD;
+}
+
+.theme-dark ::-webkit-input-placeholder {
+  color: #DDD;
+  opacity: 0.5;
+}
+
+.theme-dark :-ms-input-placeholder {
+  color: #DDD;
+  opacity: 0.5;
+}
+
+.theme-dark ::-ms-input-placeholder {
+  color: #DDD;
+  opacity: 0.5;
+}
+
+.theme-dark ::placeholder {
+  color: #DDD;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,199 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Prism - Bootstrap 4 Open Source Landing Page Template</title>
-    <meta name="description" content="Prism is a beautiful Bootstrap 4 template for open-source landing pages."/>
-
-    <!--Google font-->
-    <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
-
-    <!-- Bootstrap CSS / Color Scheme -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaaksh</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" />
+    <!-- SITE CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="icon" type="image/x-icon" sizes="48x48" href="favicon.ico">
 </head>
+
 <body>
+    <div id="wrapper">
+        <article id="cookie" class="close">
+            <div class="cookie-wrapper">
+                <h6>note</h6>
+                <p class="cookie-para">To enhance your experience on our site, we use <strong>cookies</strong>.</p>
+                <p class="cookie-para">Cookies help us to be more efficient. We can learn about what content is important to you and what is not.</p>
+                <p class="cookie-para">We can revise or remove web pages that are not of interest and focus our energies on content you want. You may find that some parts of the site will not function properly if you have refused cookies.</p>
 
-<!--Header Section-->
-<section class="bg-gradient pt-5 pb-6">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 d-flex flex-row align-items-center justify-content-between">
-                <div class="heading-brand">Prism.js</div>
-                <a href="https://prismjs.com/download.html" class="btn btn-dark" target="_blank">Download</a>
+                <p><strong>Cookies</strong> are small text files that we place in your computer's browser to store your preferences.</p>
+                <p>Cookies, by themselves, do not tell us your name, email address or other personal details.</p>
+                <p>We have no way of getting such information unless you choose to provide them to us.</p>
+                <p>When you choose to provide a web page with personal information, this information may be linked to the data stored in the cookie.</p>
+                <p>A cookie is like an identification card. It is unique to your computer and can only be read by the server that gave it to you.</p>
+                <p>We will never share any of your personal information with third parties.</p>
+                <p>We use cookies to understand site usage and to improve the content and offerings on our website. For example, we may use cookies to personalize your experience on our web pages (e.g. to recognize you when you return to our site).</p>
+                <p>If you want to control which cookies you accept, you can configure your browser to accept all cookies or to alert you every time a cookie is offered by a website's server. Most browsers automatically accept cookies. You can set your browser
+                    option so that you will not receive cookies and you can also delete existing cookies from your browser.</p>
             </div>
-        </div>
-        <div class="row mt-6">
-            <div class="col-md-8 mx-auto text-center">
-                <h1>Syntax Highlighter for Every Language</h1>
-                <p class="lead mb-5">Prism is a lightweight, extensible syntax highlighter, built with modern web
-                    standards in mind. It’s used in thousands of websites, including some of those you visit daily.</p>
-                <a href="https://github.com/LeaVerou/prism/" class="btn btn-success svg-icon">
-                    <em class="mr-2" data-feather="github"></em>
-                    Contribute
-                </a>
+            <div class="box-button-wrapper">
+                <button class="close">close</button>
+                <button class="accept">accept</button>
+                <button class="detail">more detail</button>
             </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-9 mx-auto">
-                <div class="code-window">
-                    <div class="dots">
-                        <div class="red"></div>
-                        <div class="orange"></div>
-                        <div class="green"></div>
+        </article>
+        <header id="header" class="active theme-dark">
+            <div class="header-wrapper">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/Plaaksh-logos_black.png" width="" height="" title="" alt="" class="logo-black">
+                        <img src="assets/img/Plaaksh-logos_white.png" width="" height="" title="" alt="" class="logo-white">
+                    </a>
+                </div>
+                <div class="header-middle"></div>
+                <div class="header-right">
+                    <div>
+                        <input type="text" placeholder="What are you looking for?" class="search-bar">
                     </div>
-                    <pre class="language-javascript line-numbers"><code class="language-javascript">import {DomSanitizer} from '@angular/platform-browser';
-import {Pipe, PipeTransform} from '@angular/core';
-
-import { icons } from 'feather-icons'; // v4+
-
-@Pipe({ name: 'feather' })
-export class FeatherIconsPipe implements PipeTransform {
-
-  constructor(private sanitizer: DomSanitizer) {}
-
-  transform(icon: string, size: number = 24, color: string = 'inherit') {
-    return this.sanitizer.bypassSecurityTrustHtml(icons[icon].toSvg({
-      width: size,
-      height: size,
-      color: color
-    }));
-  }
-}</code></pre>
+                    <nav id="navigator">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!--Features Section-->
-<section class="py-6">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <h2 class="text-center text-md-left">Reasons Why People Love <span class="text-success">Prism.js</span></h2>
-                <div class="row feature-grid">
-                    <div class="col-sm-6">
-                        <div class="media">
-                            <div class="icon-box">
-                                <div class="icon-box-inner">
-                                    <span data-feather="check-circle" width="28" height="28"></span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                Dead Simple
-                            </div>
+        </header>
+        <main>
+            <div id="content">
+                <section class="hero">
+                    <div class="hero-banner">
+                        <video muted autoplay loop disablePictureInPicture>
+                            <source src="assets/vid/hero_banner.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="hero-content">
+                        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                    </div>
+                </section>
+                <section class="explore-india">
+                    <h2>Explore India with Plaaksh</h2>
+                    <div class="glide explore-india-glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <!-- <li class="glide__slide">
+                                    <div class="glide-image">
+                                        <img src="assets/img/explore-shimla.jpg" width="" height="" title="Shimla" alt="">
+                                    </div>
+                                    <div class="glide-content">
+                                        <h3>Lorem Ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi veniam sint asperiores tempora minima enim cum officia itaque iure, vel quisquam corporis vitae? Itaque perspiciatis reprehenderit repellendus, quo dolorem enim.</p>
+                                        <a href="#">Explore More</a>
+                                    </div>
+                                </li> -->
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="media">
-                            <div class="icon-box">
-                                <div class="icon-box-inner">
-                                    <span data-feather="command" width="28" height="28"></span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                Highly Intuitive
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="media">
-                            <div class="icon-box">
-                                <div class="icon-box-inner">
-                                    <span data-feather="feather" width="28" height="28"></span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                Light as a Feather
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="media">
-                            <div class="icon-box">
-                                <div class="icon-box-inner">
-                                    <span data-feather="zap" width="28" height="28"></span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                Blazing Fast
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="media">
-                            <div class="icon-box">
-                                <div class="icon-box-inner">
-                                    <span data-feather="git-pull-request" width="28" height="28"></span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                Extensible
-                            </div>
-                        </div>
-                    </div><div class="col-sm-6">
-                        <div class="media">
-                            <div class="icon-box">
-                                <div class="icon-box-inner">
-                                    <span data-feather="droplet" width="28" height="28"></span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                Easy Styling
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
-        </div>
+        </main>
     </div>
-</section>
-
-<!--Used By Section-->
-<section class="pb-6">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <h2 class="text-center text-md-left">Used by Thousands of Companies</h2>
-                <p class="lead text-muted">Prism.js is used on several websites, small and large.</p>
-                <div class="mt-5 d-flex flex-row justify-content-md-between flex-wrap press-icons">
-                    <img src="https://logo.clearbit.com/google.com?size=60" alt="Google"/>
-                    <img src="https://logo.clearbit.com/twitter.com?size=60" alt="Twitter"/>
-                    <img src="https://logo.clearbit.com/vuejs.org?size=60" alt="Veu.js"/>
-                    <img src="https://logo.clearbit.com/stripe.com?size=60" alt="Stripe"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--footer-->
-<footer class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="https://prismjs.com/test.html">Test Drive</a></li>
-                    <li class="list-inline-item"><a href="https://prismjs.com/extending.html">API Docs</a></li>
-                    <li class="list-inline-item"><a href="https://github.com/LeaVerou/prism/">Fork Prism.js on GitHub</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row my-2">
-            <div class="col-md-4 mx-auto text-muted text-center small-xl">
-                &copy; 2019 Prism - All Rights Reserved
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-<script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

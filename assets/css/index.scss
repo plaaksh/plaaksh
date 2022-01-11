@@ -1,0 +1,233 @@
+$black: #000;
+$white: #FFF;
+$background: #222;
+$cookie-accept: #5DADE2;
+$cookie-close: #F1948A;
+$cookie-detail: #52BE80;
+#content {
+    padding-top: 82px;
+}
+
+
+/*
+ *
+ * COOKIE
+ *
+*/
+
+#cookie {
+    font-family: sans-serif;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    z-index: 800;
+    background: $white;
+    transition: height .25s linear;
+    &.close {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+    &.expand {
+        height: calc(100vh - 82px);
+        p {
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    h6 {
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 32px;
+        margin: 0 0 20px;
+    }
+    p {
+        margin: 0 0 12px;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        &.cookie-para {
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.cookie-wrapper {
+    padding: 50px 180px 60px;
+    height: 100%;
+    position: relative;
+}
+
+#cookie.expand .cookie-wrapper {
+    overflow-x: scroll;
+}
+
+.box-button-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        border: 1px solid;
+        background: $white;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 15px;
+        margin: 0 10px;
+        cursor: pointer;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        &.close {
+            border-color: $cookie-close;
+            color: $cookie-close;
+            &:hover {
+                background-color: $cookie-close;
+                color: $white;
+            }
+        }
+        &.accept {
+            border-color: $cookie-accept;
+            color: $cookie-accept;
+            &:hover {
+                background-color: $cookie-accept;
+                color: $white;
+            }
+        }
+        &.detail {
+            border-color: $cookie-detail;
+            color: $cookie-detail;
+            &:hover {
+                background-color: $cookie-detail;
+                color: $white;
+            }
+        }
+    }
+}
+
+#cookie.expand .box-button-wrapper .detail {
+    display: none;
+}
+
+.hero {
+    height: calc(100vh - 82px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    &:before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        background-color: $black;
+        z-index: 10;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+h1 {
+    color: $white;
+    font-size: 36px;
+    max-width: 1200px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    padding: 0 30px;
+}
+
+// _____________________________________________________________________
+
+.explore-india {
+    padding: 20px 0 0;
+    background-image: url('../img/bg1.png');
+    background-repeat: repeat;
+    h2 {
+        font-family: sans-serif;
+        padding: 0 50px;
+        font-size: 40px;
+        margin: 0 0 20px;
+    }
+    padding-bottom: 20px;
+}
+.explore-india-glide {
+    h3 {
+        margin-bottom: auto;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    .glide__slide {
+        position: relative;
+        height: auto;
+        padding: 10px 10px;
+    }
+    .glide-wrapper {
+        box-shadow: 5px 5px 5px 0px rgba($color: $black, $alpha: 0.5);
+        height: 100%;
+        background: $white;
+    }
+    .glide-image {
+        height: 250px;
+        position: relative;
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+        &:after {
+            content: ' ';
+            position: absolute;
+            background-color: $black;
+            opacity: 0.45;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .glide-content {
+        align-items: center;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        a {
+            border: 2px solid $black;
+            color: $black;
+            display: inline-block;
+            font-size: 14px;
+            background-color: $white;
+            padding: 5px 10px;
+            font-weight: 800;
+        }
+    }
+}
